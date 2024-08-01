@@ -13,4 +13,4 @@ This is a simple Todo List application built with React. It allows users to add,
 3. Start the development server: npm run dev
 
 ## App Screenshot
-![Uploading Screenshot 2024-08-01 at 5.27.46 in the afternoon.png…]()
+<img width="1440" alt="Screenshot 2024-08-01 at 5 28 27 in the afternoon" src="https://github.com/user-attachments/assets/579ab4f6-1322-4bd8-8d93-03497f3660d7">
