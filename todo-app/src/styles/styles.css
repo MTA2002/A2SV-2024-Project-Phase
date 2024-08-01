@@ -1,0 +1,134 @@
+body {
+  background-color: #fefefe;
+  font-family: sans-serif;
+}
+h1,
+p {
+  margin: 0;
+}
+#root {
+  display: flex;
+  justify-content: center;
+  margin-top: 15vh;
+}
+.app {
+  background-color: #fefefe;
+  width: 60%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  padding: 10px;
+  border-radius: 7px;
+}
+
+.heading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-color: #f56d75;
+  border-style: solid;
+  background-color: #2b2b2b;
+  color: #fffcfc;
+  border-radius: 7px;
+  padding: 10px 0px;
+  margin-bottom: 25px;
+  width: 100%;
+}
+.heading-icons {
+  color: #99e33c;
+  font-size: x-large;
+  animation: mymove 3s infinite;
+  margin: 7px;
+}
+@keyframes mymove {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.task-input {
+  width: 80%;
+  border: none;
+  background-color: #f0f7fe;
+  padding: 10px;
+  border-radius: 20px;
+  text-align: center;
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.2), 0 2px 2px 0 rgba(0, 0, 0, 0.19);
+  margin-bottom: 15px;
+}
+.task-input:focus {
+  outline: none;
+}
+button {
+  border: none;
+  background-color: inherit;
+  cursor: pointer;
+}
+.add-btn {
+  background-color: #ffb149;
+  padding: 10px;
+  border-radius: 10px;
+  font-size: larger;
+  margin-bottom: 15px;
+}
+.add-btn:hover {
+  background-color: #ffb179;
+}
+
+.delete-btn {
+  color: #ff4d4f;
+  font-size: x-large;
+}
+.delete-btn:hover {
+  color: #e60000;
+}
+
+.edit-btn {
+  font-size: x-large;
+
+  color: #4caf50;
+}
+
+.edit-btn:hover {
+  color: #45a049;
+}
+
+.tasks {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 10px 5px;
+  max-height: 300px;
+  overflow-y: scroll;
+}
+.task-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 90%;
+  background-color: #fefefe;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  margin-bottom: 15px;
+  border-radius: 10px;
+  padding: 18px 15px;
+}
+
+::-webkit-scrollbar {
+  width: 4px;
+  background: #8b10b70c;
+}
+
+::-webkit-scrollbar-track {
+  background: #fbf4fd;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #a410dab3;
+  border-radius: 12px;
+  height: 10px;
+}
+
+.list-add::-webkit-scrollbar-button {
+  background: #a410da25;
+}
