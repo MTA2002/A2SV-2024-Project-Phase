@@ -132,3 +132,7 @@ button {
 .list-add::-webkit-scrollbar-button {
   background: #a410da25;
 }
+.task-content {
+  padding: 10px;
+  overflow-x: auto;
+}

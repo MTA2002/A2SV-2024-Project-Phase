@@ -29,7 +29,7 @@ export default function Task(props: {
           }}
         />
       ) : (
-        <p>{props.task_content}</p>
+        <p className="task-content">{props.task_content}</p>
       )}
 
       <div>
@@ -94,7 +94,7 @@ export default function Task(props: {
               });
               props.setTasks(modified);
             } else {
-              const newTasks = props.tasks.filter((task, index) => {
+              const newTasks = props.tasks.filter((_task, index) => {
                 return index != props.idx;
               });
               props.setTasks(newTasks);
