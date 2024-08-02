@@ -14,7 +14,6 @@ export default function Task(props: {
   idx: number;
 }) {
   const [taskInput, setTaskInput] = useState(props.task_content);
-
   return (
     <div className="task-item">
       {props.isBeingEdited == true ? (

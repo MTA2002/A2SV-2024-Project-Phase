@@ -55,6 +55,7 @@ export default function App() {
         Add Todo
       </button>
       <div className="tasks">
+        {tasks.length == 0 && <p>No Tasks Now!!</p>}
         {tasks.map((task, index) => {
           return (
             <Task_
