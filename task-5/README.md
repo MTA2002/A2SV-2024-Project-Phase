@@ -1,30 +1,13 @@
-# React + TypeScript + Vite
+# Contact Form
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This project is a simple contact form built using React and the react-hook-form library. The form includes fields for name, email, and message, with validation rules for each.
 
-Currently, two official plugins are available:
+Clone the repository:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+1. https://github.com/MTA2002/A2SV-2024-Project-Phase.git
 
-## Expanding the ESLint configuration
+# Screen Shots
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+<img width="1440" alt="Screenshot 2024-08-01 at 5 28 27 in the afternoon" src="./Screen-Shots/Screenshot 2024-08-02 at 9.12.44 at night.png">
 
-- Configure the top-level `parserOptions` property like this:
-
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json', './tsconfig.app.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
-
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+<img width="1440" alt="Screenshot 2024-08-01 at 5 28 27 in the afternoon" src="./Screen-Shots/Screenshot 2024-08-02 at 9.15.23 at night.png">

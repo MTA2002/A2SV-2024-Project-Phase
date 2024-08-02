@@ -16,7 +16,7 @@ h1 {
 .form-container {
   position: absolute;
   top: 160px;
-  width: 40%;
+  min-width: 40%;
   display: flex;
   flex-direction: column;
   gap: 30px;
@@ -97,4 +97,10 @@ textarea {
   width: 100%;
   text-align: center;
   padding-top: 25px;
+}
+
+@media screen and (max-width: 790px) {
+  .form-container {
+    width: 90%;
+  }
 }
