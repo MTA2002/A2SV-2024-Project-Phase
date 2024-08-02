@@ -1,30 +1,16 @@
-# React + TypeScript + Vite
+## Simple Todo List App in React
+This is a simple Todo List application built with React. It allows users to add, edit, and delete tasks, and stores the tasks in local storage.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Features
+- Add Tasks: Easily add new tasks to your list.
+- Edit Tasks: Modify existing tasks with a simple click.
+- Delete Tasks: Remove tasks when they are completed or no longer needed.
+- Local Storage: Tasks are stored in the browser's local storage.
+## Installation
+1. Clone the repository: git clone https://github.com/MTA2002/A2SV-2024-Project-Phase.git Navigate to the project directory: cd todo-app
+2. install dependencies: npm install
 
-Currently, two official plugins are available:
+3. Start the development server: npm run dev
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
-
-- Configure the top-level `parserOptions` property like this:
-
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json', './tsconfig.app.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
-
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+## App Screenshot
+<img width="1440" alt="Screenshot 2024-08-01 at 5 28 27 in the afternoon" src="https://github.com/user-attachments/assets/579ab4f6-1322-4bd8-8d93-03497f3660d7">
