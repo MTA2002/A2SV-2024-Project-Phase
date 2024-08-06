@@ -47,8 +47,7 @@ This is a job listing application built using Next.js and Tailwind CSS. It inclu
 
 ### Job Card Component
 
-(./Screenshots/Screenshot 2024-08-06 at 10.39.53 in the morning.png)
+<img src = "./Screenshots/Screenshot 2024-08-06 at 10.39.53 in the morning.png" >
 
 ### Applicants Dashboard
-
-(./Screenshots/Screenshot 2024-08-06 at 10.39.33 in the morning.png)
+<img src = "./Screenshots/Screenshot 2024-08-06 at 10.39.33 in the morning.png">
