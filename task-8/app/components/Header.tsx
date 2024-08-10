@@ -11,12 +11,12 @@ const Header = () => {
   const router = useRouter();
   const { status, data: session } = useSession();
 
-  const handleLogout = () => {
+  const handleLogout = async () => {
     cookies.remove("access-token");
     if (status == "authenticated") {
-      signOut();
+      await signOut({ redirect: true, callbackUrl: "/" });
     }
-    router.refresh();
+    // router.refresh();
   };
   if (status === "loading") {
     return <div>Loading ...</div>;

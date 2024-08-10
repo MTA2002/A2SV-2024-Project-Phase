@@ -1,3 +1,4 @@
+"use client";
 import React, { useEffect, useState } from "react";
 import JobCard from "./JobCard";
 import Link from "next/link";

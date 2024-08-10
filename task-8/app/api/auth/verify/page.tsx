@@ -27,6 +27,7 @@ const VerifyEmail = () => {
       .then((response) => {
         cookies.set("access-token", response.data.data.accessToken);
         router.push("/");
+        router.refresh();
       })
       .catch(function (error) {});
     console.log(otp);

@@ -47,9 +47,14 @@ const SignUp = () => {
       <h1 className="font-poppins text-[#25324B] text-3xl font-extrabold">
         Sign Up Today!
       </h1>
-      <Link
+      <button
         className="flex border p-3 border-[#CCCCF5] rounded justify-center w-6/12 items-center gap-2"
-        href={"/api/auth/signin"}
+        onClick={() => {
+          signIn("google", {
+            redirect: false,
+            callbackUrl: "",
+          });
+        }}
       >
         <svg
           width="21"
@@ -77,7 +82,7 @@ const SignUp = () => {
         </svg>
 
         <p className="text-[#374cc1]">Sign Up with Google</p>
-      </Link>
+      </button>
 
       <div className="text-[#a5a4a7] font-epilogue font-normal text-base flex w-6/12 justify-between items-center">
         <div className="bg-[#a5a4a7] w-8/12 border"></div>
