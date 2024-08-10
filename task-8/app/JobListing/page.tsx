@@ -1,14 +1,24 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import JobCard from "./JobCard";
 import Link from "next/link";
 import Job from "../interfaces/Job";
 
-const JobListings = async () => {
-  const response = await fetch(
-    "https://akil-backend.onrender.com/opportunities/search"
-  );
-  const responseJson = await response.json();
-  const jobs = responseJson.data as Job[];
+const JobListings = () => {
+  const [jobs, setJobs] = useState<Job[]>([]);
+  useEffect(() => {
+    async function fetchData() {
+      const response = await fetch(
+        "https://akil-backend.onrender.com/opportunities/search"
+      );
+      const responseJson = await response.json();
+      const jobs_ = responseJson.data as Job[];
+      setJobs(jobs_);
+    }
+    fetchData();
+  }, []);
+  if (jobs.length == 0) {
+    return <div>Loading...</div>;
+  }
 
   return (
     <div className="flex flex-col gap-8 py-[72px] px-10">
@@ -19,7 +29,6 @@ const JobListings = async () => {
         </div>
         <div className="flex gap-2 items-center">
           <label htmlFor="categories">Sort by:</label>
-
           <select name="categories" id="categories">
             <option value="mostRelevant">Most relevant</option>
             <option value="rating">Rating</option>
